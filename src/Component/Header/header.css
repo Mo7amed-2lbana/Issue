@@ -1,0 +1,15 @@
+header{
+    font-weight: 600;
+}
+
+.issue{
+    margin-top: 14px;
+    font-size: 36px;
+}
+
+@media(max-width:767px){
+    .header-parent .item{
+        border: none !important;
+    }
+
+}

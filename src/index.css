@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #d9d9d9;
+  --hover: #47a992;
+  --trans: 0.4s;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.list {
+  background-color: var(--main-color);
+  border-radius: 9px;
+}
+
+.list .item {
+  transition: var(--trans);
+  user-select: none;
+  height: 31px;
+  cursor: pointer;
+}
+.list .item:hover,
+.list .item.active {
+  background-color: var(--hover);
+  color: #fff !important;
+}
+.list span {
+  font-size: 13px;
+  font-weight: 600;
+}
